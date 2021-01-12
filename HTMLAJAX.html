@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- only CSS -->
+    <link rel="stylesheet" href="CssAJAX.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+      </head>
+       <body onload=getALL1()>
+          <!-- header création de background noir en-tete -->
+     <nav class="group1" >
+       <a href="#">GitHub.</a>
+     </nav>
+          <!-- nav Barre -->
+     <div class="input-group md-form form-sm form-2 pl-0 " id="searchForm" >
+        <input class="form-control my-0 py-1 red-border" type="text"  placeholder="Username..." aria-label="Search" id="username"  >
+        <div class="input-group-append" style="padding: 10px" data-toggle="modal" data-target="#exampleModal" >
+          <span class="input-group-text red lighten-3" id="basic-text1"  onclick="get()"><i class="fas fa-search text-grey"
+              aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="card-group" style="width:70%; margin: auto;text-align: center; justify-content: space-around;" >
+        <div  style="width:100%;text-align: start;margin: 60px 0 20px 10px ;"><h4 style="font-weight: bold;">GitHub Profiles</h4></div>
+        <div class="row">
+            <div class="  col-lg-3 col-m-3 "> 
+        <div class="card">
+          <img src="" class="card-img-top image" alt="" >
+          <div class="card-body" >
+            <h5 class="card-title users"  >Username1</h5>
+          </div>
+        </div>
+    </div>
+
+    <div class=" col-lg-3  col-m-3 "> 
+        <div class="card">
+          <img src="" class="card-img-top image" alt="">
+          <div class="card-body">
+            <h5 class="card-title users" >Username2</h5>
+          </div>
+        </div>
+    </div>
+    <div class=" col-lg-3  col-m-3 "> 
+                <div class="card">
+                   <img src="" class="card-img-top image" alt="" >
+                  <div class="card-body">
+                     <h5 class="card-title users" >Username3</h5>
+                </div>
+                 </div>
+        </div>
+       
+        <div class=" col-lg-3  col-m-3 "> 
+        <div class="card">
+            <img src="" class="card-img-top image" alt="" >
+            <div class="card-body">
+              <h5 class="card-title users" >Username4</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POP UP -->
+    <div class="modal" tabindex="-1" id="exampleModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>  
+              </button>
+            </div>
+
+            <div class="modal-body">
+                <div class=" col-m-3"> 
+                    <div class="card">
+                      <img  class="card-img-top"  id="avatar" src="" style="height: 140px; border-radius: 20px;">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;" id="Nom">Profile not found !</h5>
+                        <div style="font-size: 20px">
+                            <label style="margin-right: 204px">Followers : <span id="Followers">00</span></label>
+                         <label>Repos : <span id="repos">00</span></label>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="background: black;">
+              <button type="button"  class="btn btn-secondary" style="width: 100%; background:none; border: none;"><a href="#" id="link">Profile</a></button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+            
+
+      <footer>
+          <p class="footer">Copyright 2020/2021</p>
+      </footer>
+
+    <script src="jsAJAX.js"></script>
+</body>
+</html>

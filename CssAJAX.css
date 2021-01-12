@@ -1,0 +1,73 @@
+
+        /* style barre de navigation */
+        .group1{
+            background-color: rgb(0, 0, 0);
+            border: 2px solid black;
+           height:70px;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 19px;
+           padding-left: 30px;
+           display:flex;
+           align-items: center;
+           margin-bottom:40px ; 
+       }
+       body,.card,#username,.modal-body,.modal-header{
+           background: #f0f4f7;
+       }
+           .group1 a{
+           color: white;
+       }
+       /* style input */
+           #searchForm{
+           border-radius: 15px;
+           background-color: black;
+           width: 400px;
+           box-shadow:  1px 1px 1px #b7bbbe,
+            -3px -3px 5px #ffffff;
+            margin-bottom: 90px;
+            margin: auto
+           }
+         
+       /* style icone */
+           #basic-text1{
+           background: black;
+           color:#f0f4f7;
+           cursor: pointer;
+           border: none;
+      }
+      /* .input-group>.form-control:not(:last-child){
+           border-top-left-radius: 15px;
+           border-bottom-left-radius: 15px; */
+           /* border: none; */
+      /* } */
+
+       /* style cards */
+         .card{
+           border-radius: 8px;
+           background: #f0f4f7;
+           box-shadow:  1px 1px 1px #b7bbbe,
+            -3px -3px 5px #ffffff;
+            margin-top: 15px;
+       }
+       /* style footer */
+            .footer{
+              text-align: center;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              color: gray;
+              font-size: 14px;
+            }
+               #Nom,#avatar,#Followers,#repos{
+                   font-weight: bold;
+                   
+               }
+         /* style footer card */
+               .modal-footer a{
+                   color: white;
+                   
+                   font-size: 19px;
+               }
+               .modal-footer a:link{
+                   text-decoration: none;
+               }
